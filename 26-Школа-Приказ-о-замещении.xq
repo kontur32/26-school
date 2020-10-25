@@ -130,9 +130,9 @@ declare function local:datePipe( $date )  as xs:date {
       [ cell[ @label = 'Дата' ]/local:datePipe( ./text() ) <= xs:date( $toDate ) ]
   
   let $поКлассам := 
-      $data[ cell[ @label = 'Предмет' ]/text() contains text ftnot { 'технология', 'английский', 'информатика' } ]
+      $data[ cell[ @label = 'Предмет' ]/text() contains text ftnot { 'технология', 'английский', 'информатика', 'основы компьютерной' } ]
   let $поПодгруппам := 
-    $data[ cell[ @label = 'Предмет' ]/text() contains text  { 'технология', 'английский', 'информатика' } ]  
+    $data[ cell[ @label = 'Предмет' ]/text() contains text  { 'технология', 'английский', 'информатика', 'основы компьютерной' } ]  
     
   let $result := 
     <html>
