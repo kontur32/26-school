@@ -150,7 +150,7 @@ declare function local:datePipe( $date )  as xs:date {
           </tr>
         </table>
         <div>
-          <form action="http://iro37.ru:9984/zapolnititul/api/v2.1/data/publication/900c0c39-3f5f-4d24-b328-0e4ecb5df3d8">
+          <form action="/zapolnititul/api/v2.1/data/publication/900c0c39-3f5f-4d24-b328-0e4ecb5df3d8">
             <label>C <input type="date" name="from" value="{  $fromDate }"/></label>
             <label> по <input type="date" name="to" value="{ $toDate }"/></label>  
             <input type="submit"/>
